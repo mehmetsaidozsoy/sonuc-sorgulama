@@ -1,0 +1,125 @@
+Merhaba! 👋 
+Bugün seninle bir uygulama yaptık. Bu uygulamanın nasıl çalıştığını sana anlatacağım.
+
+📱 Önce Uygulamamızı Başlatıyoruz
+---------------------------------------
+void main() {
+  runApp(const MyApp());
+}
+
+Bu kısım bizim uygulamamızı başlatan sihirli kelimeler. Tıpkı "Açıl susam açıl!" der gibi, 
+uygulamamıza "Haydi başla!" diyoruz.
+
+🎨 Uygulamamızın Görünüşünü Ayarlıyoruz
+---------------------------------------
+return MaterialApp(
+  title: 'Sonuç Sorgulama',
+  theme: ThemeData(
+    primarySwatch: Colors.blue,
+  ),
+)
+
+Burada uygulamamıza güzel bir mavi renk veriyoruz. 
+Tıpkı odanı boyar gibi, uygulamamızı da güzel renklerle süslüyoruz.
+
+📝 Arama Kutusunu Hazırlıyoruz
+---------------------------------------
+TextField(
+  controller: _adayNoController,
+  decoration: InputDecoration(
+    labelText: 'Aday Numarası',
+  ),
+)
+
+Bu kısım senin deftere bir şeyler yazman gibi. 
+Buraya numaramızı yazacağız ve uygulama bizim için sonuçları bulacak.
+
+🔍 Arama Düğmesini Yapıyoruz
+---------------------------------------
+ElevatedButton(
+  onPressed: _sonucSorgula,
+  child: Text('Sorgula'),
+)
+
+Bu bizim sihirli düğmemiz! 
+Bu düğmeye bastığımızda uygulama bizim için sonuçları aramaya başlıyor.
+Tıpkı hazine avındaki 'X' işaretine ulaşmak gibi!
+
+📊 Excel Dosyasından Bilgileri Okuyoruz
+---------------------------------------
+Future<Map<String, dynamic>?> searchResult(String adayNo)
+
+Bu kısım biraz karışık görünebilir ama aslında çok basit:
+- Önce Excel dosyamızı açıyoruz (tıpkı okul defterini açar gibi)
+- Sonra numarayı arıyoruz (tıpkı kitapta sayfa arar gibi)
+- Bulduğumuz bilgileri topluyoruz (tıpkı puzzle parçalarını birleştirir gibi)
+
+🎯 Sonuçları Gösteriyoruz
+---------------------------------------
+if (_sonuc != null) ...[
+  Card(
+    child: Column(
+      children: [
+        Text(_sonuc['adiSoyadi']),
+        Text(_sonuc['puan']),
+      ],
+    ),
+  ),
+]
+
+Bu kısım çok eğlenceli! Bulduğumuz bilgileri güzel bir kart üzerinde gösteriyoruz.
+Tıpkı bir doğum günü kartı gibi, içinde:
+- İsim
+- Puanlar
+- Diğer bilgiler
+hepsi güzelce yazılı.
+
+🎭 Hata Durumlarını Kontrol Ediyoruz
+---------------------------------------
+try {
+  // kodlarımız
+} catch (e) {
+  // hata olursa
+}
+
+Bu kısım bizim güvenlik görevlimiz gibi:
+- Bir sorun olursa hemen bize haber veriyor
+- "Üzgünüm, bir hata oldu" diyor
+- Böylece biz de sorunu anlayabiliyoruz
+
+🌈 Renkleri ve Stilleri Ayarlıyoruz
+---------------------------------------
+style: TextStyle(
+  color: Colors.blue,
+  fontSize: 24,
+  fontWeight: FontWeight.bold,
+)
+
+Bu kısım bizim boyama kitabımız gibi:
+- Yazılara renk veriyoruz
+- Bazılarını kalın yapıyoruz
+- Bazılarını büyük yapıyoruz
+Böylece uygulamamız çok daha güzel görünüyor!
+
+🎮 Tıklama Olaylarını Düzenliyoruz
+---------------------------------------
+onTap: _yukleniyor ? null : _sonucSorgula,
+
+Bu kısım tıpkı bir oyun kumandası gibi:
+- Düğmeye basınca ne olacağını söylüyoruz
+- Eğer yükleme yapıyorsa beklemesini söylüyoruz
+- Hazır olunca çalışmasına izin veriyoruz
+
+🏁 Son Olarak
+---------------------------------------
+Uygulamamız artık hazır! 
+- Numara yazabiliyoruz
+- Sonuçları görebiliyoruz
+- Güzel görünüyor
+- Hata olursa bizi uyarıyor
+
+İşte böyle sevgili arkadaşım, uygulamamız tıpkı bir LEGO seti gibi, 
+her parçası özenle bir araya getirildi ve ortaya harika bir şey çıktı! 🌟
+
+Not: Bu açıklamalar, kodun nasıl çalıştığını basitçe anlamana yardımcı olmak için yazıldı. 
+Her bir parça, büyük resmin içinde özel bir görevi olan küçük bir kahraman gibi! 🦸‍♂️ 

@@ -1,0 +1,40 @@
+Sonuç Sorgulama Uygulaması - Geliştirme Süreci
+
+1. Proje Başlangıcı
+- Flutter projesi oluşturuldu
+- Excel dosyası için assets klasörü eklendi
+- pubspec.yaml dosyası düzenlendi
+
+2. Excel Servisi Geliştirme
+- Excel okuma servisi oluşturuldu
+- Dinamik sütun okuma özelliği eklendi
+- TC/Aday No otomatik algılama eklendi
+
+3. Arayüz Geliştirme
+- Ana sayfa tasarımı yapıldı
+- Arama formu oluşturuldu
+- Sonuç gösterim kartı tasarlandı
+
+4. Web Sorunları ve Çözümler
+- Tıklama sorunu için index.html düzenlendi
+- Event listener'lar eklendi
+- Web renderer HTML olarak ayarlandı
+
+5. Sonuç Gösterimi İyileştirmeleri
+- Kategorize edilmiş sonuç kartı
+- Mavi renkli başlık bölümü
+- Dinamik veri gösterimi
+- Sayısal değerler için özel stil
+
+6. Özellikler
+- Excel dosyasından dinamik veri okuma
+- Otomatik sütun algılama
+- Kategorize edilmiş sonuç gösterimi
+- Responsive tasarım
+- Web uyumlu arayüz
+
+7. Kullanılan Teknolojiler
+- Flutter
+- Excel paketi
+- Material Design
+- Web platformu optimizasyonları 
